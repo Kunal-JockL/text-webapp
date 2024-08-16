@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'LogoFont';
+    src: url('./Shrikhand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo-container{
+    width: 200px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-logo{
+    height: 50px;
+    width: auto;
+    padding-right: 1px;
+}
+
+.company-name{
+    font-family: LogoFont;
+    color: var(--bc);
+    font-size: 17px;
+}

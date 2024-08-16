@@ -1,0 +1,22 @@
+<div class="message-item-container " [ngClass]="{'is-you-container': isYou, 'not-you-container': !isYou}">
+    <div class="message-item" [ngClass]="{'is-you': isYou, 'not-you': !isYou}">
+        <div class="message-sender">
+            <span class="sender-name poppins-semibold">
+                {{message.sender}}
+            </span>
+        </div>
+        <div class="message-holder">
+            <span *ngIf="message.type == 'text'; else elseBlock" class="message-content">
+                {{message.content}}
+            </span>
+            <ng-template #elseBlock>
+                <img src="{{message.content}}" alt="Image" class="message-img">
+            </ng-template>
+        </div>
+        <div class="time-holder" [ngClass]="{'you-time': isYou, 'not-time': !isYou}">
+            <span class="time poppins-light">
+                {{time}}
+            </span>
+        </div>
+    </div>
+</div>

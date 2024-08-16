@@ -1,0 +1,10 @@
+<div class="chat-div">
+    <div #chatContainer class="chat-board">
+        <div *ngFor="let message of messages" class="chat-board-items" id="chatBoardItems">
+            <app-message-item [message]="message"></app-message-item>
+        </div>
+    </div>
+    <div class="chat-input">
+        <app-chat-input-box></app-chat-input-box>
+    </div>
+</div>

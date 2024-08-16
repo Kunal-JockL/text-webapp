@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap');
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }  
+
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+:root {
+    --pc: rgb(0, 0, 0);
+    --sc: rgb(34, 40, 49);
+    --tc: rgb(49, 54, 63);
+    --lc: rgb(0, 99, 104);
+    --fc: rgb(238, 238, 238);
+    --bc: rgb(144, 55, 170);
+    --lts: 15px;
+    --bts: 16px;
+  }
+  
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  

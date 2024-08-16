@@ -1,0 +1,76 @@
+.message-item-container{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px;
+}
+
+.is-you-container{
+    justify-content: end;
+}
+
+.not-you-container{
+    justify-content: start;
+}
+
+.message-item{
+    max-width: 500px;
+    min-width: 70px;
+    padding: 3px 10px 5px 10px;
+}
+
+.is-you{
+    background-color: rgb(195, 202, 209);
+    border-radius: 10px 10px 0px 10px ;
+}
+
+.not-you{
+    background-color: rgb(0, 108, 202);
+    border-radius: 10px 10px 10px 0px;
+    
+}
+
+.sender-name{
+    height: 20px;
+}
+
+.message-holder{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.message-content{
+    font-size: 16px;
+}
+
+.message-img{
+    max-width: 350px;
+}
+
+.time-holder{
+    height: 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.time{
+    height: 13px;
+    font-size: 12px;
+    padding: 0px 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .sender-name{
+        font-size: ;
+    }
+}
