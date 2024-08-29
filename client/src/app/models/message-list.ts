@@ -20,7 +20,7 @@ export const MessagesList: Message[] = [
     type: 'image'
   },
   {
-    content: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhkJD49TaxpDnqb9aBhtW3XUV0N8q3u2U9A&usqp=CAU',
+    content: 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
     sender: 'Alice',
     timestamp: new Date('2024-08-01T10:05:10'),
     type: 'image'
@@ -38,7 +38,7 @@ export const MessagesList: Message[] = [
     type: 'gif'
   },
   {
-    content: 'https://i.pinimg.com/originals/2a/80/48/2a8048e654395812f1f4b5db515b7b24.gif',
+    content: 'https://vipestudio.com/wp-content/uploads/2020/06/unnamed-file.wp.gif',
     sender: 'Bob',
     timestamp: new Date('2024-08-01T10:08:10'),
     type: 'gif'
@@ -68,7 +68,7 @@ export const MessagesList: Message[] = [
     type: 'text'
   },
   {
-    content: 'https://el.phncdn.com/gif/23393262.gif',
+    content: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s',
     sender: 'Alice',
     timestamp: new Date('2024-08-01T10:14:00'),
     type: 'image'
@@ -110,7 +110,7 @@ export const MessagesList: Message[] = [
     type: 'text'
   },
   {
-    content: 'https://giffiles.alphacoders.com/894/89419.gif',
+    content: 'https://media.tenor.com/VbPQketjj3EAAAAM/magic-soccer.gif',
     sender: 'Alice',
     timestamp: new Date('2024-08-01T10:21:00'),
     type: 'gif'

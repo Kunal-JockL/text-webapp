@@ -1,6 +1,6 @@
 .intro-page{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient(145deg, rgba(29,98,185,1) 0%, rgba(255,0,0,1) 100%);
 
     display: flex;

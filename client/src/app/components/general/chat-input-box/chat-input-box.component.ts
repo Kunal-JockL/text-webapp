@@ -1,4 +1,4 @@
-import { Component , OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 import { Message } from '../../../models/message.model';
 import { MessagesList } from '../../../models/message-list';
 import { ChatService } from '../../../services/chat-service.service';
@@ -13,17 +13,13 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './chat-input-box.component.html',
   styleUrl: './chat-input-box.component.css'
 })
-export class ChatInputBoxComponent implements OnInit{
+export class ChatInputBoxComponent{
   constructor(private chatService: ChatService){}
 
   faImage = faImage;
   faPaperPlane = faPaperPlane;
 
   MessagesList: Message[] = MessagesList;
-
-  ngOnInit(): void {
-      
-  }
 
   delay(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -37,5 +33,4 @@ export class ChatInputBoxComponent implements OnInit{
       //await this.delay(Math.floor(1000));
     }
   }
-  
 }
