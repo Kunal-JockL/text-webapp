@@ -1,24 +1,26 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { io } from "socket.io-client";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
-  private apiUrl = 'http://localhost:5000/api';
+  private apiUrl = 'http://localhost:5000';
 
-  constructor(private http: HttpClient) { }
 
-  // Example GET request
-  getUsers(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/users`);
+  initSocket(){
+    const socket = io( this.apiUrl , { transports : ['websocket'] });
+    console.log(socket);
+    this.onInit(socket);
+    return socket;
   }
 
-  // Example POST request
-  createUser(userData: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/users`, userData);
+  onInit(socket:any){
+    socket.on("connect", () =>{
+      console.log(`You connected with id: ${socket.id}`)
+    })
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { Router } from '@angular/router';
-import { io } from "socket.io-client";
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-intro-page',
@@ -10,15 +10,13 @@ import { io } from "socket.io-client";
   styleUrl: './intro-page.component.css'
 })
 export class IntroPageComponent{
-  constructor(private router: Router) {}
+  constructor(private router: Router, private apiService: ApiService) {}
 
   navigateToMain() {
     this.router.navigate(['/main']);
   }
 
-  initSocket(){
-    const socket = io('http://localhost:5000', { transports : ['websocket'] });
-    console.log(socket);
-    return socket;
+  initConnection(){
+    this.apiService.initSocket();
   }
 }
