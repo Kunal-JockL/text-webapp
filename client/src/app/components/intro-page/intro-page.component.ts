@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import { Router } from '@angular/router';
+import { io } from "socket.io-client";
 
 @Component({
   selector: 'app-intro-page',
@@ -15,7 +16,9 @@ export class IntroPageComponent{
     this.router.navigate(['/main']);
   }
 
-  // stub1(){
-  //   console.log("yes");
-  // }
+  initSocket(){
+    const socket = io('http://localhost:5000');
+    console.log(socket);
+    return socket;
+  }
 }

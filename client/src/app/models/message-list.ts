@@ -2,7 +2,7 @@ import { Message } from "./message.model";
 
 export const MessagesList: Message[] = [
   {
-    content: 'Hello! How are you? Let\'s make good times together and also do something else',
+    content: 'Hello! How are you?',
     sender: 'Alice',
     timestamp: new Date('2024-08-01T10:00:00'),
     type: 'text'

@@ -30,7 +30,7 @@
 }
 
 .chat-board::-webkit-scrollbar-thumb {
-    background: #000000;
+    background: #606060;
     /* Color of the scroll thumb */
     border-radius: 6px;
     /* Rounded corners */
