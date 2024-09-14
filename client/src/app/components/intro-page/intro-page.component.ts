@@ -17,7 +17,7 @@ export class IntroPageComponent{
   }
 
   initSocket(){
-    const socket = io('http://localhost:5000');
+    const socket = io('http://localhost:5000', { transports : ['websocket'] });
     console.log(socket);
     return socket;
   }
