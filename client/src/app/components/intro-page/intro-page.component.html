@@ -5,7 +5,7 @@
         </div>
         <div class="label-input">
             <span class="poppins-regular name-label" >Name:</span>
-            <input type="text" class="poppins-regular name-input" id="name-input" placeholder="Stranger"> 
+            <input type="text" class="poppins-regular name-input" id="name-input" [(ngModel)]="userName" placeholder="Stranger"> 
         </div>
         <div >
             <button class="poppins-semibold get-input" id="get-input" (click)="initConnection()">Enter Chat</button>
